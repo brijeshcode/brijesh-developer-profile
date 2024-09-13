@@ -17,7 +17,7 @@ let info = {
 
 let personal_info = {
   'Date of bith': 'May 10, 1993',
-  Language: 'English, Hindi',
+  Language: 'English, Hindi', 
   Nationality: 'Indian',
   'Marital Status': 'Married',
   Address: 'P.No 29 Paldi meena jaipur (302031) Rajasthan.'
@@ -67,7 +67,7 @@ let experiesences = [
       'The main highlights of my work were: Upgrading there systems tech stack to latest (laravel8 to laravel 10, vue2 to vue3), given option to downlad language files from serverless hosting, and added new features.'
     ],
     technology: 'PHP, Laravel, Vue, Mysql, git, github, Homestead',
-    logo: '/src/assets/keyloop-logo.png'
+    logo: 'Keyloop-Logo.png'
   },
   {
     work_at: 'Freelancer',
@@ -82,7 +82,7 @@ let experiesences = [
     ],
     technology:
       'PHP, Laravel, Vue, Mysql, git, github, wordpress, inetia Js, tailwind, bootstrap, cypress, pest',
-    logo: '/src/assets/freelancer.svg'
+    logo: 'freelancer.svg'
   },
   {
     work_at: 'Web planet soft',
@@ -95,7 +95,7 @@ let experiesences = [
       'Created many wordpress custom theme and plugins.'
     ],
     technology: 'PHP, Laravel, Vue, Mysql, git, github, Homestead',
-    logo: '/src/assets/webplanet-logo.jpeg'
+    logo: 'webplanet-logo.jpeg'
   }
 ]
 let projects = [
@@ -191,26 +191,26 @@ let projects = [
   }
 ]
 
-let educations = [
+const educations = ref([
   {
     degree: 'Bachelor of Information and technology',
     institute: 'Jaipur national university',
     year: '2011-2015',
-    logo: '/src/assets/jnu.png'
+    logo: 'jnu.png'
   },
   {
     institute: 'Kendriya Vidyalaya Sri ganganagar',
     year: '2010',
     degree: 'Class 12 th',
-    logo: '/src/assets/kvs.png'
+    logo: 'kvs.png'
   },
   {
     institute: 'Kendriya Vidyalaya Sri ganganagar',
     year: '2008',
     degree: 'Class 10 th',
-    logo: '/src/assets/kvs.png'
+    logo: 'kvs.png'
   }
-]
+])
 let testimonials = [
   {
     name: 'Somen Chakraborty',
