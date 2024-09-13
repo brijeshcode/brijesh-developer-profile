@@ -5,9 +5,11 @@ let dispaly_ambition_text = ref(false)
 
 let dispaly_all_skills = ref(false)
 
+let flag= "india-flag-icon.svg";
 let info = {
   name: 'Brijesh Kumar Chaturvedi',
   position: 'Senior Laravel Developer',
+  profile_image: 'brijesh.jpeg',
   description:
     'I have a passion for software. I enjoy creating tools that make life easier for people.',
   github: 'https://github.com/brijeshcode',
@@ -282,10 +284,10 @@ let testimonials = [
 
         <div class="text-center">
           <div class="flex justify-center mb-4">
-            <img class="rounded-full" src="/src/assets/brijesh.jpeg" alt="Image" />
+            <img class="rounded-full" :src="'images/'+info.profile_image" alt="Image" />
           </div>
           <div class="flex justify-center mb-8">
-            <img class="w-12 h-12" src="/src/assets/india-flag-icon.svg" alt="Image" />
+            <img class="w-12 h-12" :src="'images/'+flag" alt="Image" />
           </div>
           Hi I'm
           <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">
@@ -512,7 +514,7 @@ let testimonials = [
             :key="'education_' + index"
           >
             <div class="text-center">
-              <img :src="education.logo" class="w-24 h-24" :alt="education.institute" />
+              <img :src="'images/'+education.logo" class="w-24 h-24" :alt="education.institute" />
               <h4 class="font-medium text-gray-700 text-lg mt-4">{{ education.year }}</h4>
             </div>
             <div class="text-center">
@@ -542,7 +544,7 @@ let testimonials = [
               <div class="flex space-x-6">
                 <!-- <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">0{{ index +1 }}</h1> -->
 
-                <img :src="exprience.logo" class="w-36 h-24" :alt="exprience.work_at" />
+                <img :src="'images/'+exprience.logo" class="w-36 h-24" :alt="exprience.work_at" />
                 <div>
                   <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
                     {{ exprience.work_at }}
