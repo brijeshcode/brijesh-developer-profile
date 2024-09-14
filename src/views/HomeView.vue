@@ -344,7 +344,7 @@ let testimonials = [
       </div>
     </section>
 
-    <section class="py-4 md:py-5 w-100 px-24 flex justify-around">
+    <section class="py-4 md:py-5 sm:w-100 px-8 sm:px-16 lg:px-24 flex justify-around">
       <div class="flex gap-4 flex-wrap" v-if="dispaly_all_skills">
         <div
           v-for="skill in skills"
@@ -507,9 +507,9 @@ let testimonials = [
           Below is a summary of the places I studied
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 w-10/12 m-auto sm:w-full md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
-            class="bg-gray-50 px-4 py-5 shadow rounded-md flex gap-2"
+            class="bg-gray-50 px-4 py-5 shadow rounded-md flex gap-12 sm:gap-2"
             v-for="(education, index) in educations"
             :key="'education_' + index"
           >
