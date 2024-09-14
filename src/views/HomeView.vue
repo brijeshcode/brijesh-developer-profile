@@ -541,20 +541,20 @@ let testimonials = [
 
           <div class="space-y-24">
             <template v-for="(exprience, index) in experiesences" :key="'exprience_' + index">
-              <div class="flex space-x-6">
-                <!-- <h1 class="font-normal text-gray-700 text-3xl md:text-4xl">0{{ index +1 }}</h1> -->
-
-                <img :src="'images/'+exprience.logo" class="w-36 h-24" :alt="exprience.work_at" />
+              <div class="flex-none sm:flex space-x-6 ">
+                <div class="flex justify-around ">
+                  <img :src="'images/'+exprience.logo" class="w-36 h-24" :alt="exprience.work_at" />
+                </div>
                 <div>
                   <h1 class="font-normal text-gray-700 text-3xl md:text-4xl mb-5">
-                    {{ exprience.work_at }}
+                    {{ exprience.work_at }} <span class="block text-normal text-lg">{{ exprience.time_from }} - {{ exprience.time_to }}</span>
                   </h1>
 
                   <p class="text-gray-500 text-xl font-bold">
                     {{ exprience.title }}
                     <span class="font-normal">({{ exprience.location }})</span>
                   </p>
-                  <ul class="py-3 w-96 list-disc list-inside">
+                  <ul class="py-3 md:w-96 list-disc list-inside ">
                     <li
                       class="font-normal text-gray-500 text-sm md:text-base"
                       v-for="desc in exprience.description"
@@ -563,10 +563,7 @@ let testimonials = [
                       {{ desc }}
                     </li>
                   </ul>
-                  <!-- <p class="font-normal text-gray-500 text-sm md:text-base">{{ exprience.description[0] }}</p> -->
-                  <p class="font-normal text-gray-500 text-sm md:text-base">
-                    {{ exprience.time_from }} - {{ exprience.time_to }}
-                  </p>
+                   
                 </div>
               </div>
             </template>
@@ -605,7 +602,7 @@ let testimonials = [
     </section>
 
     <section class="footer">
-      <div class="m-auto w-1/2 my-4">
+      <div class="m-auto sm:w-8/12 my-4 text-center">
         <p class="leading-5 mb-4">
           If you find my profile intresting please fill free to connect me via
           <a
