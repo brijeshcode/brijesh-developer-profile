@@ -73,7 +73,7 @@ let experiesences = [
   },
   {
     work_at: 'Freelancer',
-    time_from: 'Jan 2017',
+    time_from: 'Jan 2016',
     time_to: 'Nov 2022',
     location: 'Remote',
     title: 'PHP fullstack Developer',
@@ -88,8 +88,8 @@ let experiesences = [
   },
   {
     work_at: 'Web planet soft',
-    time_from: 'Oct 2016',
-    time_to: 'Nov 2017',
+    time_from: 'Oct 2015',
+    time_to: 'Nov 2016',
     location: 'Jaipur',
     title: 'Jr PHP Developer',
     description: [
