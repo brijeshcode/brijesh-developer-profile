@@ -1,311 +1,68 @@
 <script setup>
-import { ref } from 'vue'
+import { useBrijeshInfo } from '../Data/BrijeshInfo.js'
 
-let dispaly_ambition_text = ref(false)
+const { 
+  
+    skills,
+    contact_info,
+    objectives,
+    experiesences,
+    projects,
+    educations,
+    testimonials,
+    personalInfo,
+    flag,
+    dispaly_ambition_text,
+    dispaly_all_skills
+   
+} = useBrijeshInfo();
 
-let dispaly_all_skills = ref(false)
-
-let flag= "india-flag-icon.svg";
-let info = {
-  name: 'Brijesh Kumar Chaturvedi',
-  position: 'Senior Laravel Developer',
-  profile_image: 'brijesh.jpeg',
-  description:
-    'I have a passion for software. I enjoy creating tools that make life easier for people.',
-  github: 'https://github.com/brijeshcode',
-  linkdin: 'https://www.linkedin.com/in/brijesh-chaturvedi-it',
-  freelancer: 'https://www.freelancer.com/u/brijeshlancer'
-}
-
-let personal_info = {
-  'Date of bith': 'May 10, 1993',
-  Language: 'English, Hindi', 
-  Nationality: 'Indian',
-  'Marital Status': 'Married',
-  Address: 'P.No 29 Paldi meena jaipur (302031) Rajasthan.'
-}
-
-let contact_info = {
-  mobile: '9999999999',
-  email: '',
-  skype: 'brijesh.it'
-}
-
-let skills = [
-  { name: 'Laravel', years: 6, top_skill: true },
-  { name: 'Vue', years: 4, top_skill: true },
-  { name: 'Mysql', years: 8, top_skill: true },
-  { name: 'Wordpress', years: 7, top_skill: true },
-  { name: 'HTML', years: 8, top_skill: false },
-  { name: 'CSS', years: 8, top_skill: false },
-  { name: 'PHP', years: 7, top_skill: false },
-  { name: 'JS', years: 8, top_skill: false },
-  { name: 'Tailwind', years: 2, top_skill: true },
-  { name: 'Bootstrap', years: 6, top_skill: false },
-  { name: 'FontAwesome', years: 6, top_skill: false },
-
-  { name: 'Cypress', years: 6, top_skill: true },
-  { name: 'Pest', years: 6, top_skill: true },
-
-  { name: 'Inertia Js', years: 6, top_skill: false },
-  { name: 'REST API', years: 6, top_skill: false },
-  { name: 'Git', years: 4, top_skill: false },
-  { name: 'Github', years: 4, top_skill: false },
-  { name: 'Docker', years: 2, top_skill: false },
-  { name: 'Digitalocean', years: 2, top_skill: false },
-  { name: 'API Devlopment', years: 2, top_skill: false }
-]
-
-let experiesences = [
-  {
-    work_at: 'Smart working solutions (Keyloop)',
-    time_from: 'Nov 2022',
-    time_to: 'Oct 2024',
-    location: 'Remote',
-    title: 'Senior Laravel Developer',
-    description: [
-      'Worked as Senior Laravel developer on product (Auto Service booking software)',
-      'Worked with UK team of Keyloop moters, providing my expertise in PHP, Laravel, Vue, Inertia, Tailwind, Mysql',
-      'The main highlights of my work were: Upgrading there systems tech stack to latest (laravel8 to laravel 10, vue2 to vue3), given option to downlad language files from serverless hosting, and added new features.'
-    ],
-    technology: 'PHP, Laravel, Vue, Mysql, git, github, Homestead',
-    logo: 'Keyloop-Logo.png'
-  },
-  {
-    work_at: 'Freelancer',
-    time_from: 'Jan 2016',
-    time_to: 'Nov 2022',
-    location: 'Remote',
-    title: 'PHP fullstack Developer',
-    description: [
-      "Created many project with multiple clients and companies inclucing India's and over seas both",
-      'I give my 110% to achieve the gole of my clients and all of my clients love my work and appriciete me with giving 5 star rating on freelancer.com. My rehire rate is 90%.',
-      'please visit my profile: https://www.freelancer.com/u/brijeshlancer'
-    ],
-    technology:
-      'PHP, Laravel, Vue, Mysql, git, github, wordpress, inetia Js, tailwind, bootstrap, cypress, pest',
-    logo: 'freelancer.svg'
-  },
-  {
-    work_at: 'Web planet soft',
-    time_from: 'Oct 2015',
-    time_to: 'Nov 2016',
-    location: 'Jaipur',
-    title: 'Jr PHP Developer',
-    description: [
-      'Worked on core php, wordpress, laravel, projects',
-      'Created many wordpress custom theme and plugins.'
-    ],
-    technology: 'PHP, Laravel, Vue, Mysql, git, github, Homestead',
-    logo: 'webplanet-logo.jpeg'
-  }
-]
-let projects = [
-  {
-    title: 'Multi tenant accounting app',
-    description:
-      "It's accounting system for managing Club and resturants. its been use by 10+ companies, from morroco.",
-    role: 'Full stack developer',
-    technology: ['PHP', 'Laravel', 'Vue', 'Inertia', 'Tailwind', 'Mysql', 'Apache'],
-    created_for: 'Freelance Client',
-    url: '#',
-    images: ['assets/image/project-1.png', 'assets/image/project-2.png'],
-    is_featured: true
-  },
-  {
-    title: 'Woocommerce API',
-    description: 'Created Woocommerce API for schoolmegamart.com.',
-    role: 'Full stack developer',
-    technology: ['PHP', 'Wordpress'],
-    created_for: 'Freelance Client',
-    url: '#',
-    is_featured: false
-  },
-  {
-    title: 'Delhivery portal to woocommerce plugin',
-    description:
-      'Created a wordpress plugin to integrate with delhivery portal. It automaticly fetch delhivery status and can create delivery order from woocommerce.',
-    role: 'Full stack developer',
-    technology: ['PHP', 'Wordpress'],
-    created_for: 'Freelance Client',
-    url: '#',
-    is_featured: true
-  },
-  {
-    title: 'Auto thumbnail generator plugin',
-    description:
-      'Created a wordpress plugin to generate thumbnails automatically from the content of the post, it was developed for a wordpress site related to jokes. jokes will automatically print generate thumbnails. The chalanging part was Jokes were writen in Hindi.',
-    role: 'Full stack developer',
-    technology: ['PHP', 'Wordpress'],
-    created_for: 'Freelance Client',
-    url: '#',
-    is_featured: true
-  },
-  {
-    title: 'Web design Scarabay.com',
-    description:
-      'Created a web design for Scarabay.com. It was done with Laravel and bootstrap 4, also Integrated with google maps.',
-    role: 'Full stack developer',
-    technology: ['PHP', 'Laravel', 'Bootstrap 4'],
-    created_for: 'Freelance Client',
-    url: 'https://scarabay.com/',
-    is_featured: false
-  },
-  {
-    title: 'Multi tenant payroll system',
-    description:
-      'Created a payroll system which is feather distributed to multiple client, The intresting part is that it can be used for multiple client with same code, to enable this we implemented Multi tenant architecture. It was developed with Laravel, vue, inertia, tailwind and mysql.',
-    role: 'Full stack developer',
-    technology: ['Laravel', 'Inertia', 'Tailwind', 'Mysql', 'Apache'],
-    created_for: 'Freelance Client',
-    url: '#',
-    is_featured: false
-  },
-  {
-    title: 'Electric bill estimator',
-    description:
-      'It estimate how much electricty bill can come based on multiple factors like number of applience use with ther uses timing and there energy consumption. It was developed with Jquery and bootstrap 4.',
-    role: 'Full stack developer',
-    technology: ['Jquery', 'Bootstrap 4'],
-    created_for: 'Self',
-    url: 'https://github.com/brijeshcode/electric-bill-calculator-js',
-    is_featured: false
-  },
-  {
-    title: 'Money Exchange System',
-    description:
-      'It was developed to manage operation of a Money exchange office, It was developed base on the requirements of client. It work as Point of sale for the client office. It automticly calculate profit and loss, also show admin the activity of here tellers and there current balances. It give controll to admin to set a range over currency exchange rate for buy and sell. It was developed with Laravel, Vue, Inertia, Tailwind and mysql. Also we integrated sms notificatoin, whatsapp invoice sending and schedulers to audit system on regular basis. We also added Test cases for api and front end.',
-    role: 'Full stack developer',
-    technology: ['Laravel', 'Vue', 'Inertia', 'Tailwind', 'Cypress', 'Pest', 'Mysql'],
-    created_for: 'Self',
-    url: '#',
-    is_featured: true
-  },
-  {
-    title: 'Auto Service Booking system',
-    description:
-      'It allows customers to book their Car service online. It follow microservices architecture and multitenant architecture. It was developed with Laravel, Vue,bootstrap 4 and mysql.',
-    role: 'Full stack developer',
-    technology: ['Laravel', 'Vue', 'Inertia', 'Mysql'],
-    created_for: 'Self',
-    url: '#',
-    is_featured: true
-  }
-]
-
-const educations = ref([
-  {
-    degree: 'Bachelor of Information and technology',
-    institute: 'Jaipur national university',
-    year: '2011-2015',
-    logo: 'jnu.png'
-  },
-  {
-    institute: 'Kendriya Vidyalaya Sri ganganagar',
-    year: '2010',
-    degree: 'Class 12 th',
-    logo: 'kvs.png'
-  },
-  {
-    institute: 'Kendriya Vidyalaya Sri ganganagar',
-    year: '2008',
-    degree: 'Class 10 th',
-    logo: 'kvs.png'
-  }
-])
-let testimonials = [
-  {
-    name: 'Somen Chakraborty',
-    message:
-      'I had the pleasure of working with Brijesh at Smart Working and was consistently impressed by his exceptional skills and professionalism. He excelled in Laravel & has great project management skills, he is always keen on delivering results that exceeded expectations. Brijesh is a proactive and reliable team member with a great attitude, making him a valuable asset to any team. I highly recommend him for any organization.',
-    company: 'Smart Working Solutions',
-    country: 'India',
-    // position: 'Operations Lead | Community Management | Client Relationship Specialist | Hospitality Alum'
-    position: 'Operations Lead',
-    show: true
-  },
-  {
-    name: 'David',
-    message:
-      'This guy is very professional and helpful He is a problem solver, very skilled and he never sleeps until "job is done as required" He made a complete professional accounting system with perfection I highly recommend him... 5 STARS',
-    company: 'Freelancer',
-    country: 'Morocco',
-    position: 'client',
-    show: true
-  },
-  {
-    name: 'Mark',
-    message:
-      'Overall, Brijesh is a highly skilled and reliable PHP developer who consistently delivers excellent results on time. The technical expertise, dedication, and collaborative spirit make him an asset to any team. I highly recommend Brijesh for any future projects or roles that require a proficient and dependable developer.',
-    company: 'Freelancer',
-    country: 'Lebanon',
-    position: 'client',
-    show: true
-  },
-  {
-    name: 'Kailash shirsat',
-    message:
-      'I was surprise that my plugin is finally created which was never found a solution from the original plugin author also. I like the easily understating nature of this freelancer who suggest improvements also in our project. I assure who will hire first time him will always be satisfied with his work. I feel myself lucky as i found this freelancer. Thanks Brijesh.',
-    company: 'Freelancer',
-    country: 'India',
-    position: 'client',
-    show: true
-  },
-  {
-    name: 'Nicholas',
-    message:
-      'Brijesh is essentially the top coder I use for any PSD to HTML work required. Clients often want WORDPRESS platforms due to its popularity but he will code custom designs from scratch and remove any fluff from the bloated CMS. Often clever solutions to some elements are required, he has a very good grasp on web coding. Brijesh is a pleasure to work with.',
-    company: 'Freelancer',
-    country: 'India',
-    position: 'client',
-    show: true
-  },
-  {
-    name: 'Vivek K',
-    message:
-      'Brijesh is an excellent developer, follows Instructions and provides fast solutions, Ready to hire him for next project.Keep up the good work.',
-    company: 'Freelancer',
-    country: 'India',
-    position: 'client',
-    show: true
-  }
-]
 </script>
 
 <template>
   <main>
-    <section class="py-10 md:py-16">
+    <section class="header">
       <div class="container max-w-screen-xl mx-auto px-4">
-        <!-- <nav class="flex items-center justify-between mb-40">
-                <img src="assets/image/navbar-logo.png" alt="Logo">
+        <nav class="flex items-center justify-between p-2">
+          &nbsp;
+          <a
+            class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
+            href="/ResumesFormat1"
+          >
+            Cv Formants
+          </a>
+        </nav>
+      </div>
 
-                <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Get my CV</button>
-            </nav> -->
+    </section>
+    <section class="py-5 md:py-5">
+      <div class="container max-w-screen-xl mx-auto px-4">
+
 
         <div class="text-center">
           <div class="flex justify-center mb-4">
-            <img class="rounded-full" :src="'images/'+info.profile_image" alt="Image" />
+            <img class="rounded-full" :src="'images/'+personalInfo.profile_image" alt="Image" />
           </div>
           <div class="flex justify-center mb-8">
             <img class="w-12 h-12" :src="'images/'+flag" alt="Image" />
           </div>
           Hi I'm
           <h6 class="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">
-            {{ info.name }}
+            {{ personalInfo.name }}
           </h6>
 
           <h1 class="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">
-            {{ info.position }}
+            {{ personalInfo.position }}
           </h1>
 
-          <p class="font-normal text-gray-600 text-md md:text-xl mb-16">{{ info.description }}</p>
+          <p class="font-normal text-gray-600 text-md md:text-xl mb-16">{{ personalInfo.description }}</p>
 
           <!-- <a href="#" class="px-7 py-3 md:px-9 md:py-4 font-medium md:font-semibold bg-gray-700 text-gray-50 text-sm rounded-md hover:bg-gray-50 hover:text-gray-700 transition ease-linear duration-500">Hire me</a> -->
 
           <section class="social-media">
             <div class="container max-w-screen-xl mx-auto flex gap-4 justify-around w-1/12">
               <div class="github">
-                <a :href="info.github" target="_blank">
+                <a :href="personalInfo.github" target="_blank">
                   <svg class="w-8 h-8" viewBox="0 0 496 512">
                     <path
                       d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
@@ -314,7 +71,7 @@ let testimonials = [
                 </a>
               </div>
               <div class="linkedin">
-                <a :href="info.linkdin" target="_blank">
+                <a :href="personalInfo.linkdin" target="_blank">
                   <svg class="w-8 h-8" viewBox="0 0 448 512">
                     <path
                       d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
@@ -329,7 +86,7 @@ let testimonials = [
                   </a>
                 </div> -->
               <div class="freelance">
-                <a :href="info.freelancer" target="_blank">
+                <a :href="personalInfo.freelancer" target="_blank">
                   <svg class="w-8 h-8 text-black" viewBox="0 0 64 64">
                     <path
                       d="M37.6 8.203l4.36 6.113L64 8.203M14.676 55.797l11.93-11.663-7.18-7.705M35.783 8.203l-6.376 5.75 10.724.4m-29.134-6.15l2.3 4.693 12.62.786M17.753 32.54l9.324-17.393L0 13.683m18.838 19.96l8.807 9.46 9.715-9.523 3.015-17.737-11.84-.604"
@@ -607,7 +364,7 @@ let testimonials = [
           If you find my profile intresting please fill free to connect me via
           <a
             class="text-white px-1 text-lg bg-indigo-600 hover:bg-indigo-700 rounded-md cursor-pointer"
-            :href="info.linkdin"
+            :href="personalInfo.linkdin"
             target="_blank"
             >Linkedin</a
           >,
@@ -617,7 +374,7 @@ let testimonials = [
           >
           or
           <a
-            :href="info.freelancer"
+            :href="personalInfo.freelancer"
             target="_blank"
             class="text-white px-1 text-lg bg-sky-500 hover:bg-sky-600 rounded-md cursor-pointer"
             >Freelance</a
