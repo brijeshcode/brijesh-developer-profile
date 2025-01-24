@@ -1,6 +1,6 @@
 <script setup>
 import { useBrijeshInfo } from '@/Data/BrijeshInfo.js';
-import  SectionTitle  from '@/Components/ResumeSections/SectionTitle.vue';
+import  SectionTitle from '../ResumeSections/SectionTitle.vue';
 const { 
     objectives,
 } = useBrijeshInfo();
@@ -10,8 +10,8 @@ const {
 <template>
     <section id="summary-section" class="mb-4">
         <SectionTitle>Summary</SectionTitle>
-        <div class="p-2 text-sm md:text-[12px] " >
-            {{ objectives.third }}
+        <div class="p-2 text-sm text-[12px]" >
+            {{ objectives.fourth }}
         </div>
     </section>
 </template>
