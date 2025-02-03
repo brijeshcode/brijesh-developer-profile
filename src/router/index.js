@@ -18,9 +18,19 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
-      path: '/ResumesFormat1',
-      name: 'ResumesFormat1',
-      component: () => import('../views/ResumesFormat1.vue')
+      path: '/resume-color',
+      name: 'Resume-color',
+      component: () => import('../views/ResumeColored.vue')
+    },
+    {
+      path: '/resume-plain',
+      name: 'Resume-plain',
+      component: () => import('../views/ResumePlain.vue')
+    },
+    {
+      path: '/resume-plain-tab',
+      name: 'Resume-plain-tab',
+      component: () => import('../views/ResumePlainWithTab.vue')
     }
   ]
 })

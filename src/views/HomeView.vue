@@ -25,12 +25,17 @@ const {
       <div class="container max-w-screen-xl mx-auto px-4">
         <nav class="flex items-center justify-between p-2">
           &nbsp;
-          <a
-            class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500"
-            href="/ResumesFormat1"
-          >
-            Cv Formants
-          </a>
+          <div class="gap-2 flex"> 
+              <a
+                class="px-7 py-3 md:px-4 md:py-2 font-medium md:font-semibold text-md rounded-md bg-gray-700 text-white transition ease-linear duration-500"
+                href="/resume-color"
+                >
+                Resume
+              </a>
+              
+              
+          </div>
+
         </nav>
       </div>
 

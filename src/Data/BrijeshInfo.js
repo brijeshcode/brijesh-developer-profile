@@ -88,7 +88,9 @@ const objectives = {
     'third': 'Dedicated and skilled PHP developer with extensive full-stack experience, particularly in Laravel and Vue.js. I have successfully enhanced applications, contributed to various freelance projects, and developed user-centric solutions, ensuring client satisfaction. My passion for continuous learning and problem-solving drives my ability to deliver impactful results.',
     'fourth' : 'Experienced PHP developer with strong full-stack skills in Laravel and Vue.js. Proven success in enhancing applications, delivering freelance projects, and creating user-centric solutions. Passionate about continuous learning and problem-solving to achieve impactful results.',
     
-    'third_fourth' : 'Dedicated and skilled PHP developer with extensive full-stack experience, particularly in Laravel and Vue.js. I have successfully enhanced applications, contributed to various freelance projects, and developed user-centric solutions, ensuring client satisfaction. My passion for continuous learning and problem-solving drives my ability to deliver impactful results. Experienced PHP developer with strong full-stack skills in Laravel and Vue.js. Proven success in enhancing applications, delivering freelance projects, and creating user-centric solutions. Passionate about continuous learning and problem-solving to achieve impactful results.'
+    'third_fourth' : 'Dedicated and skilled PHP developer with extensive full-stack experience, particularly in Laravel and Vue.js. I have successfully enhanced applications, contributed to various freelance projects, and developed user-centric solutions, ensuring client satisfaction. My passion for continuous learning and problem-solving drives my ability to deliver impactful results. Experienced PHP developer with strong full-stack skills in Laravel and Vue.js. Proven success in enhancing applications, delivering freelance projects, and creating user-centric solutions. Passionate about continuous learning and problem-solving to achieve impactful results.',
+
+    'fifth': 'Experienced PHP Laravel Developer with 7+ years of expertise in building scalable web applications and RESTful APIs. Proven track record of working remotely with UK-based companies like Keyloop and Stickee. Skilled in database optimization, backend development, and collaborating with cross-functional teams. Passionate about delivering high-quality solutions and adapting to new technologies.'
 
 }
 
@@ -281,7 +283,7 @@ const projects = [
       description:
         'Developed to manage operations for a money exchange office. Built based on client requirements, it functions as a Point of Sale system for the office. Automatically calculates profit and loss, shows the admin teller activities and balances, and allows the admin to set a range for currency exchange rates (buy/sell). It integrates SMS notifications, WhatsApp invoice sending, and schedulers for regular audits. Test cases were added for APIs and the front end. Built with Laravel, Vue, Inertia, Tailwind, and MySQL.',
       highlights: [
-        'Developed a system for managing money exchange operations.',
+        'Built a secure money exchange system using Laravel and Vue.js.',
         'System reduces 80% of manual audit work.',
         'Automated profit and loss calculations and activity tracking.',
         'Integrated SMS notifications, WhatsApp invoices, and audit schedulers.'
@@ -462,7 +464,7 @@ const resumeSkills = {
         }
 
     ],
-    tools_technologies: [
+    tools_and_technologies: [
         {
             title: 'Version Control',
             skills: [

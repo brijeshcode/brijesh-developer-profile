@@ -9,6 +9,6 @@ const {
 
 <template>
     <div class="flex gap-1">
-        <icon-linkedin class="w-4 text-sky-600" /> <a title="Linkedin" :href="personalInfo.linkdin" target="_blank" class="font-semibold">{{ personalInfo.linkdin.replace(/^https:\/\/www\./, "") }}</a>
+        <icon-linkedin title="Linkedin" class="w-4 text-sky-600" /> <a :title="'Linkedin:' + personalInfo.linkdin" :href="personalInfo.linkdin" target="_blank" class="font-semibold">{{ personalInfo.linkdin.replace(/^https:\/\/www\./, "") }}</a>
     </div>
 </template>
