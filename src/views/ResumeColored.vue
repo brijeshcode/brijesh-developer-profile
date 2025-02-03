@@ -8,7 +8,6 @@ import SectionHeader from '@/components/ResumeSections/Header.vue';
 import SectionStrengths from '@/components/ResumeSections/Strengths.vue';
 import SectionSkills from '@/components/ResumeSections/Skills.vue';
 import SectionProject from '@/components/ResumeSections/Project.vue';
-import ResumeNav from '@/components/Reusables/ResumeNav.vue';
 import ResumeTemplate from '@/components/Reusables/ResumeTemplate.vue';
 
 const {   
@@ -36,6 +35,7 @@ const {
                 <section-skills />
                 <section-language />
 
+             
             </div>
 
         </div>
