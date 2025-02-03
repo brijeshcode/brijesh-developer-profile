@@ -6,7 +6,7 @@ const {
     skills,
     contact_info,
     objectives,
-    experiesences,
+    experiences,
     projects,
     educations,
     testimonials,
@@ -302,7 +302,7 @@ const {
           </div>
 
           <div class="space-y-24">
-            <template v-for="(exprience, index) in experiesences" :key="'exprience_' + index">
+            <template v-for="(exprience, index) in experiences" :key="'exprience_' + index">
               <div class="flex-none sm:flex space-x-6 ">
                 <div class="flex justify-around ">
                   <img :src="'images/'+exprience.logo" class="w-36 h-24" :alt="exprience.work_at" />
