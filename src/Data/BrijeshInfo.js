@@ -77,7 +77,7 @@ const skills = [
 const contact_info = {
     mobile: '9413377890',
     email: 'brijeshchaturvedi.it@gmail.com',
-    skype: 'brijesh.it'
+    // skype: 'brijesh.it'
 }
 
 const objectives = {
@@ -108,7 +108,7 @@ const experiences = [
       ],
     
       technology: 'PHP, Laravel, Vue, MySQL, Git, GitHub, Homestead',
-      logo: 'Keyloop-Logo.png'
+      logo: 'stickee.png'
     },
     {
       work_at: 'Smart Working Solutions (Keyloop)',
@@ -128,10 +128,27 @@ const experiences = [
       logo: 'Keyloop-Logo.png'
     },
     {
+      work_at: 'Phoeniixx',
+      company_description: '',
+      time_from: 'Nov 2020',
+      time_to: 'Nov 2022',
+      location: 'Remote (India)',
+      title: 'Senior Developer Team Lead',
+      descriptions: [
+          'I played an integral role in developing diverse solutions, from e-commerce platforms and e-learning systems to backend software applications.',
+          'Additionally, I engaged directly with clients to gather project requirements and managed junior developers by reviewing and verifying their work.',
+      ],
+    
+    
+      technology:
+        'PHP, Laravel, Vue, MySQL, Git, GitHub, WordPress, Inertia.js, Tailwind, Bootstrap, Cypress, Pest',
+      logo: 'phoniixx.jpg'
+    },
+    {
       work_at: 'Freelancer',
       company_description: '',
       time_from: 'Jan 2016',
-      time_to: 'Nov 2022',
+      time_to: 'Nov 2020',
       location: 'Remote (multiple countries)',
       title: 'PHP Full Stack Developer',
       descriptions: [
