@@ -24,7 +24,6 @@ const {
                     <WhatsappLink />
                     <EmailLink />
                     <LinkedinLink />
-                    <SkypeLink />
                     <div class="flex gap-1">
                         <icon-location class="w-4 text-sky-600" /> <span class="font-semibold capitalize">{{ personalInfo.location }}</span>
                     </div>
