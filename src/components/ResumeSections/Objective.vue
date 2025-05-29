@@ -11,7 +11,7 @@ const {
     <section id="summary-section" class="mb-4">
         <SectionTitle>Summary</SectionTitle>
         <div class="p-2 text-sm text-[12px]" >
-            {{ objectives.fourth }}
+            {{ objectives.sixth }}
         </div>
     </section>
 </template>

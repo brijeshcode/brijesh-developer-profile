@@ -5,6 +5,7 @@ export function useBrijeshInfo() {
 const personalInfo = {
     name: 'Brijesh Kumar Chaturvedi',
     position: 'Senior Laravel Developer',
+    position: 'Senior Laravel & Vue.js Developer | 9+ Yrs Experience | Remote-First | Ex-Keyloop (UK)',
     profile_image: 'brijesh.jpeg',
     description:
       'I have a passion for software. I enjoy creating tools that make life easier for people.',
@@ -27,12 +28,12 @@ const personalInfo = {
 const strengths = [
     {
         name: 'Analytical Skills',
-        description: 'Exceptional analytical and problem-solving skills.',
+        description: 'Exceptional analytical and problem-solving abilities.',
         icon : 'magic-wand'
     },
     {
         name: 'Personal Traits',
-        description: 'Disciplined and professional attitude.',
+        description: 'Highly Disciplined with professional attitude.',
         icon: 'half-star'
     },
     {
@@ -81,8 +82,7 @@ const contact_info = {
 }
 
 const objectives = {
-    'first' : 'I want to work with an esteemed organization which gives me an opportunity to utilize my skills, knowledge and enhances it in a right way, which will help me in achieving mine as well as an organization\'s  goals. I want  to make valuable contribution in creating wonderful application which plays a meaningful role in people\'s lives.',
-
+    'first' : 'I want to work with an esteemed organization which gives me an opportunity to utilize my skills, knowledge and enhances it in a right way, which will help me in achieving mine as well as an organization\'s  goals. I want  to make valuable contribution in creating wonderful application which plays a meaningful role in people\'s lives.', 
     'second' : 'To contribute to an esteemed organization by utilizing my skills and expertise in PHP development, while continuously enhancing my knowledge. I aim to develop impactful applications that bring value to users and help achieve organizational goals',
 
     'third': 'Dedicated and skilled PHP developer with extensive full-stack experience, particularly in Laravel and Vue.js. I have successfully enhanced applications, contributed to various freelance projects, and developed user-centric solutions, ensuring client satisfaction. My passion for continuous learning and problem-solving drives my ability to deliver impactful results.',
@@ -90,11 +90,31 @@ const objectives = {
     
     'third_fourth' : 'Dedicated and skilled PHP developer with extensive full-stack experience, particularly in Laravel and Vue.js. I have successfully enhanced applications, contributed to various freelance projects, and developed user-centric solutions, ensuring client satisfaction. My passion for continuous learning and problem-solving drives my ability to deliver impactful results. Experienced PHP developer with strong full-stack skills in Laravel and Vue.js. Proven success in enhancing applications, delivering freelance projects, and creating user-centric solutions. Passionate about continuous learning and problem-solving to achieve impactful results.',
 
-    'fifth': 'Experienced PHP Laravel Developer with 7+ years of expertise in building scalable web applications and RESTful APIs. Proven track record of working remotely with UK-based companies like Keyloop and Stickee. Skilled in database optimization, backend development, and collaborating with cross-functional teams. Passionate about delivering high-quality solutions and adapting to new technologies.'
+    'fifth': 'Experienced PHP Laravel Developer with 7+ years of expertise in building scalable web applications and RESTful APIs. Proven track record of working remotely with UK-based companies like Keyloop and Stickee. Skilled in database optimization, backend development, and collaborating with cross-functional teams. Passionate about delivering high-quality solutions and adapting to new technologies.',
+    'sixth': 'Results-driven Senior PHP Developer with 9+ years of experience specializing in Laravel, Vue.js, and full-stack web development. Proven success in remote teams across UK & EU, delivering scalable systems, optimizing workflows, and leading product innovations. Passionate about writing clean, testable code and collaborating with cross-functional teams to solve real-world business problems.',
+
 
 }
 
 const experiences = [
+    
+    {
+      work_at: 'Smart Working Solutions (Keyloop)',
+      company_description: 'Keyloop is a client of SWS, focusing on the automotive industry.',
+      time_from: 'Nov 2022',
+      time_to: 'Oct 2024',
+      location: 'Remote (UK)',
+      title: 'Senior Laravel Developer',
+      descriptions: [
+        'Collaborated with a UK-based team to enhance auto service booking software as a full-stack developer.',
+        'Upgraded the application stack from Laravel 8 to Laravel 10 and Vue.js 2 to Vue.js 3.',
+        'Designed and rolled out a comprehensive onboarding feature that improved new user engagement by 50%, enabling a smoother transition and ensuring scalability for future customer support initiatives.',
+        'Reduced the average booking time from five minutes to two minutes, helping to increase the booking rate by 30%',
+        'Decreased partial bookings by 80% (500 → 100/month) by refactoring service logic.',
+      ],
+      technology: 'PHP, Laravel, Vue, MySQL, Git, GitHub, Homestead',
+      logo: 'Keyloop-Logo.png'
+    },
     {
       work_at: 'Smart Working Solutions (Stickee.co.uk)',
       company_description: 'Stickee is a client of SWS, focusing on data analysis and statistics.',
@@ -111,23 +131,6 @@ const experiences = [
       logo: 'stickee.png'
     },
     {
-      work_at: 'Smart Working Solutions (Keyloop)',
-      company_description: 'Keyloop is a client of SWS, focusing on the automotive industry.',
-      time_from: 'Nov 2022',
-      time_to: 'Oct 2024',
-      location: 'Remote (UK)',
-      title: 'Senior Laravel Developer',
-      descriptions: [
-        'Collaborated with a UK-based team to enhance auto service booking software as a full-stack developer.',
-        'Upgraded the application stack from Laravel 8 to Laravel 10 and Vue.js 2 to Vue.js 3.',
-        'Implemented features to enhance customer experience and ensure scalability.',
-        'Reduced the average booking time from five minutes to two minutes, helping to increase the booking rate by 30%',
-        'Decreased partial bookings from 500 to 100 per month.',
-      ],
-      technology: 'PHP, Laravel, Vue, MySQL, Git, GitHub, Homestead',
-      logo: 'Keyloop-Logo.png'
-    },
-    {
       work_at: 'Phoeniixx',
       company_description: '',
       time_from: 'Nov 2020',
@@ -135,8 +138,9 @@ const experiences = [
       location: 'Remote (India)',
       title: 'Senior Developer Team Lead',
       descriptions: [
-          'I played an integral role in developing diverse solutions, from e-commerce platforms and e-learning systems to backend software applications.',
-          'Additionally, I engaged directly with clients to gather project requirements and managed junior developers by reviewing and verifying their work.',
+          'Led development of diverse solutions, from e-commerce platforms and e-learning systems to backend software applications.',
+          'Engaged directly with clients to gather project requirements',
+          'Mentored junior developers, including code reviews and work verification.',
       ],
     
     
@@ -155,7 +159,7 @@ const experiences = [
           'Successfully completed multiple projects for diverse clients and organizations.',
           'Delivered high-quality solutions, ensuring client satisfaction and meeting business goals.',
           'Projects included Laravel and Vue.js applications, plugin development, and e-commerce integrations (see the Projects section for details).',
-          'Aimed to solve complex problems, delivered user-centric solutions, minimized costs, and increased efficiency.'
+          'Solved complex problems by delivering user-centric solutions, resulting in minimized costs and increased efficiency for clients.'
       ],
     
     
@@ -188,12 +192,12 @@ const projects = [
         'Developed an accounting system designed for managing clubs and restaurants, successfully adopted by 10+ companies in Morocco.',
       highlights: [
         'Designed and implemented a multi-tenant (Multi-Database) architecture.', 
-        'It decreased Warehouse Management (WMS) costs by 50%',
+        'This architecture decreased Warehouse Management (WMS) costs by 50%.',
         'It cut auditing and expense tracking time by 70%.',
         'Integrated automatic backup and restore functionality to ensure data security and integrity.',
         'Built with Laravel and Vue.js to deliver a user-friendly and efficient accounting management interface.',
       ],
-      role: 'Prodcut Owner',
+      role: 'Product Owner',
       technology: ['PHP', 'Laravel', 'Vue', 'Inertia', 'Tailwind', 'MySQL', 'Apache'],
       created_for: 'Freelance (Morocco - Lebanon)',
       url: '#',
@@ -221,7 +225,7 @@ const projects = [
       description:
         'Developed a WordPress plugin to integrate WooCommerce with the Delhivery portal. The plugin automatically fetches shipment statuses from Delhivery and allows the creation of delivery orders directly from WooCommerce.',
       highlights: [
-        'It\'s a custom plugin to seamlessly integrate WooCommerce with the Delhivery portal.',
+        'Developed a custom plugin to seamlessly integrate WooCommerce with the Delhivery portal.',
         'Reduced manual effort of creating delivery orders and tracking by 70%.',
         'Enables the creation of delivery orders directly from WooCommerce.',
         'Automatically fetches shipment statuses from Delhivery.',
@@ -301,7 +305,7 @@ const projects = [
         'Developed to manage operations for a money exchange office. Built based on client requirements, it functions as a Point of Sale system for the office. Automatically calculates profit and loss, shows the admin teller activities and balances, and allows the admin to set a range for currency exchange rates (buy/sell). It integrates SMS notifications, WhatsApp invoice sending, and schedulers for regular audits. Test cases were added for APIs and the front end. Built with Laravel, Vue, Inertia, Tailwind, and MySQL.',
       highlights: [
         'Built a secure money exchange system using Laravel and Vue.js.',
-        'System reduces 80% of manual audit work.',
+        'Reduced manual audit work by 80%.',
         'Automated profit and loss calculations and activity tracking.',
         'Integrated SMS notifications, WhatsApp invoices, and audit schedulers.'
       ],
@@ -318,14 +322,14 @@ const projects = [
         'Allows customers to book car services online. It follows Microservices architecture and Multi-Tenant architecture. Developed using Laravel, Vue, Bootstrap 4, and MySQL.',
       highlights: [
           'Enhanced an existing Auto Service Booking System.',
-          'We improve average booking time from 5 minutes to 2 minutes.',
+          'Improved average booking time from 5 minutes to 2 minutes.',
           'Optimized Microservices and Multi-Tenant (Single-Database) architecture for better scalability.',
           'Reduced technical debt and improved code quality.',
           'Refactored the application to align with best coding practices.'
       ],      
       role: 'Senior Laravel Developer',
       technology: ['Laravel', 'Vue', 'Inertia', 'MySQL'],
-      created_for: 'Keyloop (Uk)',
+      created_for: 'Keyloop (UK)',
       url: '#',
       is_featured: true,
       time: 'Nov 2022 - Oct 2024'
@@ -335,7 +339,7 @@ const projects = [
   
 const educations = [
     {
-        degree: 'Bachelor of Information Technology',
+        degree: 'Bachelor of information technology',
         institute: 'Jaipur national university',
         year: '2011-2015',
         logo: 'jnu.png',
@@ -416,7 +420,7 @@ const testimonials = [
 ];
 
 const resumeSkills = {
-    programmnig: [
+    Programming: [
 
         {
             title: 'Basic',
@@ -525,6 +529,83 @@ const resumeSkills = {
         }
         
     ]
+}
+
+const resumeSkillsByType = {
+    Programming: [
+
+        {
+            title: 'Backend',
+            skills: [
+                {name: 'Laravel', from: 2016, is_top_skill:true, link: 'https://laravel.com/', description: 'Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling.'},
+                { name: 'PHP (OOP)', from: 2015 , is_top_skill:true,  link: 'https://www.php.net/', description: 'PHP (Hypertext Preprocesso) is a popular general-purpose scripting language that is especially suited to web development.'},
+                { name: 'MySQL', from: 2014, is_top_skill:true, link: 'https://www.mysql.com/', description: 'MySQL [My Structured Query Language] is an open-source relational database management system.' },
+                { name: 'REST APIs', from: 2015, is_top_skill:true, link: 'https://restfulapi.net/', description: 'REST (Representational State Transfer) is an architectural style that defines a set of constraints to be used for creating web services.'},
+                { name: 'Redis', from: 2019, is_top_skill:true, link: '#', description: '' },
+                { name: 'TDD', from: 2019, is_top_skill:true, link: '#', description: '' },
+                
+            ]
+        },
+        {
+            title: 'Frontend',
+            skills: [
+                { name: 'Vue', from: 2020, is_top_skill:true, link: 'https://vuejs.org/', description: 'Vue.js is a progressive framework for building user interfaces. It is designed from the ground up to be incrementally adoptable.'},
+                {
+                    name: 'Bootstrap', from: 2016, is_top_skill:true, link: 'https://getbootstrap.com/', description: 'Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.'
+                },
+                {
+                    name: 'Tailwind', from: 2021, is_top_skill:true, link: 'https://tailwindcss.com/', description: 'Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.'
+                },
+                {
+                    name: 'Inertia Js', from: 2021, is_top_skill:true, link: 'https://inertiajs.com/', description: 'Inertia.js lets you quickly build modern single-page React, Vue and Svelte apps using classic server-side routing and controllers.'
+                },
+                { name: 'HTML', from: 2013, is_top_skill:true, link: 'https://developer.mozilla.org/en-US/docs/Web/HTML', description: 'HTML (HyperText Markup Language) is the most basic building block of the Web.' },
+                { name: 'CSS', from: 2013, is_top_skill:true, link: 'https://developer.mozilla.org/en-US/docs/Web/CSS', description: 'CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.' },
+                { name: 'JavaScript', from: 2014, is_top_skill:true, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', description: 'JavaScript is a programming language that enables you to interact with web pages.' },
+            ]
+        },
+        {
+            title: 'DevOps & Tools',
+            skills: [
+                {
+                    name: 'Docker', from: 2015, is_top_skill:true, link: 'https://www.docker.com/', description: 'Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.'
+                },
+                {
+                    name: 'Digitalocean', from: 2015, is_top_skill:true, link: 'https://www.digitalocean.com/', description: 'DigitalOcean, Inc. is an American cloud infrastructure provider headquartered in New York City with data centers worldwide.'
+                },
+                {
+                    name: 'Git', from: 2015, is_top_skill:true, link: 'https://git-scm.com/', description: 'Git is a distributed version-control system for tracking changes in source code during software development.'
+                },
+                {
+                    name: 'Github', from: 2015, is_top_skill:true, link: 'https://github.com', description: 'GitHub is a web-based platform used for version control. It is also a social network where programmers can collaborate and comment on each other’s code.'
+                }
+                
+            ],
+        },
+        {
+            title: 'Testing',
+            skills: [
+                {
+                    name: 'Cypress', from: 2015, is_top_skill:true, link: 'https://www.cypress.io/', description: 'Cypress is a front end automated testing application created for the modern web.'
+                },
+                {
+                    name: 'Pest', from: 2015, is_top_skill:true, link: 'https://pestphp.com/', description: 'Pest is a Testing Framework with a focus on simplicity.'
+                }
+            ]
+        },
+        {
+            title: 'Others',
+            skills: [
+                { name: 'WordPress', from: 2015, is_top_skill:true, link: 'https://wordpress.org/', description: 'WordPress is an open-source content management system written in PHP and paired with a MySQL or MariaDB database.' },
+                { name: 'WooCommerce', from: 2015, is_top_skill:true, link: '#', description: '' },
+                { name: 'Linux', from: 2015, is_top_skill:true, link: '#', description: '' },
+                { name: 'Composer', from: 2015, is_top_skill:true, link: '#', description: '' },
+            ]
+        },
+        
+
+    ],
+    
 }
 const dispaly_ambition_text = ref(false)
 

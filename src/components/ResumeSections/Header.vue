@@ -18,7 +18,7 @@ const {
         <div class="resume-header flex gap-2 justify-between">
             <div class="basis-2/3"> 
                 <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-1 uppercase">{{personalInfo.name}}</h1>
-                <h2 class="text-sky-600 font-semibold text-lg md:text-2xl mb-4">{{personalInfo.position}}</h2>
+                <h2 class="text-sky-600 font-semibold text-sm mb-4">{{personalInfo.position}}</h2>
                 <div class="contact flex flex-wrap gap-2 print:text-[11px] md:text-[12px] ">
                     
                     <WhatsappLink />
