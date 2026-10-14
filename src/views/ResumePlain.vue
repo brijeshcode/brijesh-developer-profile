@@ -23,10 +23,11 @@ const {
 <template>
     <resume-template>
 
-        <section class="header text-center flex flex-col items-center mb-4">
-            <h1 class="font-bold text-gray-700 text-3xl md:text-2xl mb-1 uppercase">
+        <section class="header text-center flex flex-col items-center mb-5">
+            <h1 class="font-extrabold tracking-tight text-ink text-3xl md:text-4xl mb-1">
                 {{ personalInfo.name }}
             </h1>
+            <p class="font-mono text-xs text-accent mb-2">{{ personalInfo.position }}</p>
             <ul class="flex flex-col md:flex-row print:flex-row space-x-4 items-center">
                 <li><WhatsappLink /></li>
                 <li><EmailLink /></li>
@@ -81,7 +82,7 @@ const {
                     </div>
 
                     <div class="text-gray-700 text-sm md:text-[12px]">
-                        <p>{{ experiance.compnay_description }}</p>
+                        <p>{{ experiance.company_description }}</p>
                         <ul class="list-disc list-inside p-2">
                             <li v-for="point in experiance.descriptions" :key="point">{{ point }}</li>
                         </ul>
@@ -169,7 +170,7 @@ const {
                     <div v-for="language in personalInfo.languages" :key="language.name" class=""> 
                         <div class="flex gap-x-16 " >
                             <span class="font-semibold text-sm md:text-[16px] print:text-[14px] mb-1">{{ language.name }}</span>
-                            <span class="font-bold text-sm md:text-[14px] print:text-[12px] text-sky-600 mb-1">{{ language.level }}</span>
+                            <span class="font-bold text-sm md:text-[14px] print:text-[12px] text-accent mb-1">{{ language.level }}</span>
                         </div>
                     </div>
                 </div>

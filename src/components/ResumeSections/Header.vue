@@ -4,36 +4,32 @@ import IconLocation from '@/components/icons/IconLocation.vue';
 import LinkedinLink from '@/components/Reusables/LinkedinLink.vue';
 import WhatsappLink from '@/components/Reusables/WhatsappLink.vue';
 import EmailLink from '@/components/Reusables/EmailLink.vue';
-import SkypeLink from '@/components/Reusables/SkypeLink.vue';
 
-const { 
+const {
     personalInfo
 } = useBrijeshInfo();
 
 </script>
 
 <template>
-    <section id="header" class="mb-8">
-        
-        <div class="resume-header flex gap-2 justify-between">
-            <div class="basis-2/3"> 
-                <h1 class="font-bold text-gray-700 text-3xl md:text-4xl mb-1 uppercase">{{personalInfo.name}}</h1>
-                <h2 class="text-sky-600 font-semibold text-sm mb-4">{{personalInfo.position}}</h2>
-                <div class="contact flex flex-wrap gap-2 print:text-[11px] md:text-[12px] ">
-                    
-                    <WhatsappLink />
-                    <EmailLink />
-                    <LinkedinLink />
-                    <div class="flex gap-1">
-                        <icon-location class="w-4 text-sky-600" /> <span class="font-semibold capitalize">{{ personalInfo.location }}</span>
-                    </div>
-
+    <section id="header" class="mb-8 flex items-center justify-between gap-6 border-b border-hairline pb-6">
+        <div>
+            <h1 class="text-3xl font-extrabold tracking-tight text-ink md:text-4xl">{{ personalInfo.name }}</h1>
+            <h2 class="mt-1 font-mono text-sm text-accent">{{ personalInfo.position }}</h2>
+            <div class="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 text-[12px] text-ink-soft print:text-[11px]">
+                <WhatsappLink />
+                <EmailLink />
+                <LinkedinLink />
+                <div class="flex items-center gap-1.5">
+                    <icon-location class="w-4 text-accent" />
+                    <span class="font-medium capitalize">{{ personalInfo.location }}</span>
                 </div>
             </div>
-            <div class="basis-1/3  ">
-                <img class="rounded-full w-1/2 m-auto " :src="'images/'+personalInfo.profile_image" :alt="personalInfo.name" />
-            </div>
         </div>
-
+        <img
+            class="hidden h-24 w-24 shrink-0 rounded-full object-cover ring-2 ring-accent-soft sm:block"
+            :src="'images/' + personalInfo.profile_image"
+            :alt="personalInfo.name"
+        />
     </section>
 </template>

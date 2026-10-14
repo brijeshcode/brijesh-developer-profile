@@ -9,6 +9,6 @@ const {
 
 <template>
     <div class="flex gap-1">
-        <icon-skype class="w-4 text-sky-600" /> <a :href="'Skype:'+ contact_info.skype+'?chat'" target="_blank" class="font-semibold" title="skype">{{ contact_info.skype }}</a>
+        <icon-skype class="w-4 text-accent" /> <a :href="'Skype:'+ contact_info.skype+'?chat'" target="_blank" class="font-semibold" title="skype">{{ contact_info.skype }}</a>
     </div>
 </template>

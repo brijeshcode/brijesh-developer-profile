@@ -27,7 +27,7 @@ const {
         <template v-for="project in projects" :key="project.title" >
             <div class="p-2" v-if="project.is_featured" >
                 <h2 class="font-semibold text-sm md:text-[16px] capitalize mb-1">{{ project.title }}</h2>
-                <h3 class="font-bold text-sm md:text-[14px] text-sky-600 mb-1">{{ project.role }}</h3>
+                <h3 class="font-bold text-sm md:text-[14px] text-accent mb-1">{{ project.role }}</h3>
                 <div class="md:text-[11px] text-gray-600 flex gap-3">
                     <span class="flex gap-2">
                         <icon-calender class="w-4" /> 

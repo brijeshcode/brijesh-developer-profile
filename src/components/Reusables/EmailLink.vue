@@ -9,6 +9,6 @@ const {
 
 <template>
     <div class="flex gap-1">
-        <icon-email class="w-4 text-sky-600" /> <a title="Email" :href="'mailto:'+ contact_info.email" target="_blank" class="font-semibold">{{ contact_info.email }}</a>
+        <icon-email class="w-4 text-accent" /> <a title="Email" :href="'mailto:'+ contact_info.email" target="_blank" class="font-semibold">{{ contact_info.email }}</a>
     </div>
 </template>

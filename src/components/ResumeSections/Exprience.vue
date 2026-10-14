@@ -14,7 +14,7 @@ const {
         <SectionTitle>EXPERIENCE</SectionTitle>
         <div class="p-2" v-for="experiance in experiences" :key="experiance.title">
             <h2 class="font-semibold text-sm md:text-[16px] mb-1">{{ experiance.title }}</h2>
-            <h3 class="font-bold text-sm md:text-[14px] text-sky-600 mb-1">{{ experiance.work_at }}</h3>
+            <h3 class="font-bold text-sm md:text-[14px] text-accent mb-1">{{ experiance.work_at }}</h3>
             <div class="md:text-[11px] text-gray-600 flex gap-3">
                 <span class="flex gap-2">
                     <icon-calender class="w-4" /> 
@@ -28,7 +28,7 @@ const {
             </div>
 
             <div class="text-gray-700 text-sm md:text-[12px]">
-                <p>{{ experiance.compnay_description }}</p>
+                <p>{{ experiance.company_description }}</p>
                 <ul class="list-disc list-inside p-2">
                     <li v-for="point in experiance.descriptions" :key="point">{{ point }}</li>
                 </ul>

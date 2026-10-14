@@ -12,7 +12,7 @@ const {
         <SectionTitle>Skills sets</SectionTitle>
         <div class="p-2 text-sm md:text-[11px]">
             <div v-for="(skills, key) in resumeSkills" :key="key" class=" mb-4 pb-2"> 
-                <h3 class="font-bold text-sm md:text-[14px] text-sky-600 mb-1 capitalize">{{  key.replace(/_/g, " ") }}</h3>
+                <h3 class="font-bold text-sm md:text-[14px] text-accent mb-1 capitalize">{{  key.replace(/_/g, " ") }}</h3>
 
                  
 

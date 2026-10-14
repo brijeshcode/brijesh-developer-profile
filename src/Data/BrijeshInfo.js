@@ -4,7 +4,6 @@ export function useBrijeshInfo() {
 
 const personalInfo = {
     name: 'Brijesh Kumar Chaturvedi',
-    position: 'Senior Laravel Developer',
     position: 'Senior Laravel & Vue.js Developer | 9+ Yrs Experience | Remote-First | Ex-Keyloop (UK)',
     profile_image: 'brijesh.jpeg',
     description:
@@ -99,10 +98,10 @@ const objectives = {
 const experiences = [
     
     {
-      work_at: 'Smart Working Solutions (Keyloop)',
+      work_at: 'Smart Working Solutions (Keyloop, stickee.co.uk)',
       company_description: 'Keyloop is a client of SWS, focusing on the automotive industry.',
       time_from: 'Nov 2022',
-      time_to: 'Oct 2024',
+      time_to: 'Jan 2025',
       location: 'Remote (UK)',
       title: 'Senior Laravel Developer',
       descriptions: [
@@ -115,21 +114,21 @@ const experiences = [
       technology: 'PHP, Laravel, Vue, MySQL, Git, GitHub, Homestead',
       logo: 'Keyloop-Logo.png'
     },
-    {
-      work_at: 'Smart Working Solutions (Stickee.co.uk)',
-      company_description: 'Stickee is a client of SWS, focusing on data analysis and statistics.',
-      time_from: 'Oct 2024',
-      time_to: 'Jan 2025',
-      location: 'Remote (UK)',
-      title: 'Senior Data Acquisition Engineer',
-      descriptions: [
-        'Worked on the Broadband Plan team to scrape and gather data from various websites.',
-        'Successfully scraped data from five different websites in a short time, yielding almost 8000 deals per day.'
-      ],
+    // {
+    //   work_at: 'Smart Working Solutions (Stickee.co.uk)',
+    //   company_description: 'Stickee is a client of SWS, focusing on data analysis and statistics.',
+    //   time_from: 'Oct 2024',
+    //   time_to: 'Jan 2025',
+    //   location: 'Remote (UK)',
+    //   title: 'Senior Data Acquisition Engineer',
+    //   descriptions: [
+    //     'Worked on the Broadband Plan team to scrape and gather data from various websites.',
+    //     'Successfully scraped data from five different websites in a short time, yielding almost 8000 deals per day.'
+    //   ],
     
-      technology: 'PHP, Laravel, Vue, MySQL, Git, GitHub, Homestead',
-      logo: 'stickee.png'
-    },
+    //   technology: 'PHP, Laravel, Vue, MySQL, Git, GitHub, Homestead',
+    //   logo: 'stickee.png'
+    // },
     {
       work_at: 'Phoeniixx',
       company_description: '',
