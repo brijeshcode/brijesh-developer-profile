@@ -41,7 +41,7 @@ const quotes = testimonials.filter((t) => t.show).slice(0, 3)
             href="/resume-color"
             class="rounded-md bg-ink px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent"
           >
-            Résumé
+            Resume
           </a>
         </div>
       </nav>
@@ -68,7 +68,7 @@ const quotes = testimonials.filter((t) => t.show).slice(0, 3)
               href="/resume-color"
               class="rounded-md bg-accent px-6 py-3 font-medium text-white transition-colors hover:bg-accent-dark"
             >
-              View résumé
+              View resume
             </a>
             <a
               :href="'mailto:' + contact_info.email"
